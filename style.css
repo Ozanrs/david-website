@@ -1,47 +1,62 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
 }
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: black;
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: black;
-    color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2% 10%;
+  color: white;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
 
 .nav-links a:hover {
-    color: #f4b400;
+  color: white;
+}
+
+.request {
+  color: rgb(221, 221, 0);
+  font-size: larger;
+  font-weight: bold;
+  border: 2px solid rgb(221, 221, 0);
+  padding: 15px 30px;
+  border-radius: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out,
+              border 0.5s ease-in-out,
+              box-shadow 0.5s ease-in-out;
+}
+
+.request:hover {
+  color: orange;
+  border: 1px solid orange;
+  box-shadow: 0 0 5px orange, 0 0 25px rgba(255,165,0,0.5);
 }
